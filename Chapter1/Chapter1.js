@@ -6,7 +6,7 @@ function getRndInteger(min, max) {
 
 var answer;
 
-function newProblem() {
+function newProblem(int problemClass) {
 	resetProblem();
 	var a = getRndInteger(1,20);
 	var b = getRndInteger(1,20);
@@ -17,7 +17,7 @@ function newProblem() {
 	document.getElementById("addend").innerHTML = prompt2.toString();
 }
 
-function checkAnswer() {
+function checkAnswer(int problemClass) {
 	var feedback;
 	let x = document.getElementById("studentAnswer").value;
 	if (x == answer) { feedback = "Correct!"; }
@@ -25,10 +25,21 @@ function checkAnswer() {
 	document.getElementById("feedbackText").innerHTML = feedback;
 }
 
-function resetProblem() {
+function resetProblem(int problemClass) {
 		resetCheckDisplay();
 		resetAnswerField();
 }
 
-function resetCheckDisplay() {document.getElementById("feedbackText").innerHTML = "&nbsp"}
-function resetAnswerField() {document.getElementById("studentAnswer").value = ""}
+function resetCheckDisplay(int problemClass) {document.getElementById("feedbackText"+problemClass.toString()).innerHTML = "&nbsp"}
+function resetAnswerField(int problemClass) {document.getElementById("studentAnswer"+problemClass.toString()).value = ""}
+
+var numCorrect, numAbandoned, numInCorrect
+var stateProblemActive
+
+
+function trackOutcome(int problemClass){
+	if (stateGenerated == false) {}
+	else if (stateGenerated == true && stateAnswered==false) {numAbandoned++;}
+	else if (stateGenerated == true && stateAnswered == true && stateFinished=false) {}
+	else if (stateGenerated==true && stateFinished==true) {numCorrect++;}
+}
