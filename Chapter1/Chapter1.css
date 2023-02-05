@@ -1,0 +1,32 @@
+html{
+	background-color: rgb(128, 128, 0);
+	font-size: 3em;
+}
+div.problem-box {
+		width : 30%;
+		border : 3px solid;
+		background-color: rgb(255,255,255);
+}
+.problem-box > p {
+	text-align: right;
+}
+.problem-box > input {
+	width : 50%;
+	text-align: right;
+}
+
+.problem-box > div > table{
+	border-bottom: 3px solid;
+	text-align: right;
+}
+td > p {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+h1,h2,h3,h4,h5,h6 {
+	margin-block-start: 0;
+	margin-block-end: 0;
+}
+input {
+	font-size: 1em;
+}
