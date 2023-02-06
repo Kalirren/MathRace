@@ -1,5 +1,5 @@
 var numCorrect, numAbandoned, numInCorrect
-var stateGenerated, stateAnswered, stateFinished
+var stateProblemActive
 
 
 function trackOutcome(int problemClass){
