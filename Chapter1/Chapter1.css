@@ -10,7 +10,7 @@ div.problem-box {
 .problem-box > p {
 	text-align: right;
 }
-.problem-box > input {
+input {
 	width : 50%;
 	text-align: right;
 }

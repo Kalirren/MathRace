@@ -7,8 +7,8 @@
 		<div>
 		<table> 
 			<tr>
-				<td><button type = "button" onclick = 'newProblem()'>New Problem</button></td>
-				<td><button type = "button" onclick = 'checkAnswer()'> Check!</button></td>
+				<td><button type = "button" onclick = 'newProblem(0)'>New Problem</button></td>
+				<td><button type = "button" onclick = 'checkAnswer(0)'> Check!</button></td>
 					</tr>
 			<tr>
 				<td></td>
@@ -20,7 +20,7 @@
 			</tr>
 		</table> 
 		</div>
-		<input type="number" onfocus = 'resetCheckDisplay()' id="studentAnswer0">
+		<input type="number" onfocus = 'resetProblem(0)' id="studentAnswer0">
 		<p id="feedbackText0"> &nbsp </p>
 	</div>
 	<div class="problem-box">
@@ -28,8 +28,8 @@
 		<div>
 		<table> 
 			<tr>
-				<td><button type = "button" onclick = 'newProblem()'>New Problem</button></td>
-				<td><button type = "button" onclick = 'checkAnswer()'> Check!</button></td>
+				<td><button type = "button" onclick = 'newProblem(1)'>New Problem</button></td>
+				<td><button type = "button" onclick = 'checkAnswer(1)'> Check!</button></td>
 					</tr>
 			<tr>
 				<td></td>
@@ -37,12 +37,33 @@
 			</tr>
 			<tr>
 				<td><p > + </p></td>
-				<td><input type="number" onfocus = 'resetCheckDisplay()' id="studentAnswer1"></td>
+				<td><p id = "addend1"> &nbsp; </p></td>
 			</tr>
 		</table> 
 		</div>
-		<input type="number" onfocus = 'resetCheckDisplay()' id="studentAnswer1">
+		<input type="number" onfocus = 'resetProblem(1)' id="studentAnswer1">
 		<p id="feedbackText1"> &nbsp </p>
+	</div>
+		<div class="problem-box">
+		<h6> Unknown addend, 2-digit to 1-digit</h6>
+		<div>
+		<table> 
+			<tr>
+				<td><button type = "button" onclick = 'newProblem(2)'>New Problem</button></td>
+				<td><button type = "button" onclick = 'checkAnswer(2)'> Check!</button></td>
+					</tr>
+			<tr>
+				<td></td>
+				<td><p id = "addor2"> &nbsp; </p></td>
+			</tr>
+			<tr>
+				<td><p > + </p></td>
+				<td><input type="number" onfocus = 'resetProblem(2)' id="studentAnswer2"></td>
+			</tr>
+		</table> 
+		</div>
+		<p id = "sum2"> &nbsp; </p>
+		<p id="feedbackText2"> &nbsp </p>
 	</div>
 	<script src= "Chapter1.js"></script>
 	</body>
