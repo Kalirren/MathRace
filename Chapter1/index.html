@@ -20,7 +20,7 @@
 			</tr>
 		</table> 
 		</div>
-		<input type="number" onfocus = 'resetProblem(0)' id="studentAnswer0">
+		<input type="number" onfocus = 'resetAnswerField(0)' id="studentAnswer0">
 		<p id="feedbackText0"> &nbsp </p>
 	</div>
 	<div class="problem-box">
@@ -41,11 +41,14 @@
 			</tr>
 		</table> 
 		</div>
-		<input type="number" onfocus = 'resetProblem(1)' id="studentAnswer1">
+		<input type="number" onfocus = 'resetAnswerField(1)' id="studentAnswer1">
 		<p id="feedbackText1"> &nbsp </p>
 	</div>
-		<div class="problem-box">
+	<div class="problem-box">
 		<h6> Unknown addend, 2-digit to 1-digit</h6>
+	<table>
+		<tr>
+		<td>
 		<div>
 		<table> 
 			<tr>
@@ -58,12 +61,18 @@
 			</tr>
 			<tr>
 				<td><p > + </p></td>
-				<td><input type="number" onfocus = 'resetProblem(2)' id="studentAnswer2"></td>
+				<td><input type="number" onfocus = 'resetAnswerField(2)' id="studentAnswer2"></td>
 			</tr>
 		</table> 
 		</div>
 		<p id = "sum2"> &nbsp; </p>
 		<p id="feedbackText2"> &nbsp </p>
+		</td>
+		<td>
+			<img id="reward2" src="http://placekitten.com/200/300"></img>
+		</td>
+		</tr>
+	</table>
 	</div>
 	<script src= "Chapter1.js"></script>
 	</body>

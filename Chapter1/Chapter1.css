@@ -3,7 +3,7 @@ html{
 	font-size: 3em;
 }
 div.problem-box {
-		width : 30%;
+		width : 10rem;
 		border : 3px solid;
 		background-color: rgb(255,255,255);
 }
@@ -15,7 +15,7 @@ input {
 	text-align: right;
 }
 
-.problem-box > div > table{
+.problem-box table{
 	border-bottom: 3px solid;
 	text-align: right;
 }
@@ -29,4 +29,8 @@ h1,h2,h3,h4,h5,h6 {
 }
 input {
 	font-size: 1em;
+}
+.problem-box img{
+	position: relative;
+	z-index:-1;
 }
