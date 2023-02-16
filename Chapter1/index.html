@@ -4,48 +4,68 @@
 	<body>
 	<div class="problem-box">
 		<h6> Addition, below 20 </h6>
-		<div>
-		<table> 
-			<tr>
-				<td><button type = "button" onclick = 'newProblem(0)'>New Problem</button></td>
-				<td><button type = "button" onclick = 'checkAnswer(0)'> Check!</button></td>
-					</tr>
-			<tr>
-				<td></td>
-				<td><p id = "addor0"> &nbsp; </p></td>
-			</tr>
-			<tr>
-				<td><p > + </p></td>
-				<td><p id = "addend0"> &nbsp; </p></td>
-			</tr>
-		</table> 
-		</div>
-		<input type="number" onfocus = 'resetProblem(0)' id="studentAnswer0">
-		<p id="feedbackText0"> &nbsp </p>
+		<table>
+		<tr><td>
+			<div>
+			<table> 
+				<tr>
+					<td><button type = "button" onclick = 'newProblem(0)'>New Problem</button></td>
+					<td><button type = "button" onclick = 'checkAnswer(0)'> Check!</button></td>
+						</tr>
+				<tr>
+					<td></td>
+					<td><p id = "addor0"> &nbsp; </p></td>
+				</tr>
+				<tr>
+					<td><p > + </p></td>
+					<td><p id = "addend0"> &nbsp; </p></td>
+				</tr>
+			</table> 
+			</div>
+			<input type="number" onfocus = 'resetAnswerField(0)' id="studentAnswer0">
+			<p id="feedbackText0"> &nbsp </p>
+		</td>
+			<td>
+				<img id="reward0" src="http://placekitten.com/200/300"></img>
+			</td>
+		</tr>
+	</table>
 	</div>
 	<div class="problem-box">
 		<h6> Addition, 2-digit to 1-digit</h6>
-		<div>
-		<table> 
+		<table>
 			<tr>
-				<td><button type = "button" onclick = 'newProblem(1)'>New Problem</button></td>
-				<td><button type = "button" onclick = 'checkAnswer(1)'> Check!</button></td>
+			<td>
+				<div>
+				<table> 
+					<tr>
+						<td><button type = "button" onclick = 'newProblem(1)'>New Problem</button></td>
+						<td><button type = "button" onclick = 'checkAnswer(1)'> Check!</button></td>
+							</tr>
+					<tr>
+						<td></td>
+						<td><p id = "addor1"> &nbsp; </p></td>
 					</tr>
-			<tr>
-				<td></td>
-				<td><p id = "addor1"> &nbsp; </p></td>
-			</tr>
-			<tr>
-				<td><p > + </p></td>
-				<td><p id = "addend1"> &nbsp; </p></td>
-			</tr>
-		</table> 
-		</div>
-		<input type="number" onfocus = 'resetProblem(1)' id="studentAnswer1">
-		<p id="feedbackText1"> &nbsp </p>
+					<tr>
+						<td><p > + </p></td>
+						<td><p id = "addend1"> &nbsp; </p></td>
+					</tr>
+				</table> 
+				</div>
+				<input type="number" onfocus = 'resetAnswerField(1)' id="studentAnswer1">
+				<p id="feedbackText1"> &nbsp </p>
+			</td>
+			<td>
+				<img id="reward1" src="http://placekitten.com/200/300"></img>
+			</td>
+		</tr>
+	</table>
 	</div>
-		<div class="problem-box">
+	<div class="problem-box">
 		<h6> Unknown addend, 2-digit to 1-digit</h6>
+	<table>
+		<tr>
+		<td>
 		<div>
 		<table> 
 			<tr>
@@ -58,12 +78,18 @@
 			</tr>
 			<tr>
 				<td><p > + </p></td>
-				<td><input type="number" onfocus = 'resetProblem(2)' id="studentAnswer2"></td>
+				<td><input type="number" onfocus = 'resetAnswerField(2)' id="studentAnswer2"></td>
 			</tr>
 		</table> 
 		</div>
 		<p id = "sum2"> &nbsp; </p>
 		<p id="feedbackText2"> &nbsp </p>
+		</td>
+		<td>
+			<img id="reward2" src="http://placekitten.com/200/300"></img>
+		</td>
+		</tr>
+	</table>
 	</div>
 	<script src= "Chapter1.js"></script>
 	</body>
