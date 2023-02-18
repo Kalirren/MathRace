@@ -46,11 +46,18 @@ function newProblem(problemClass) {
 			document.getElementById("addend1").innerHTML = prompt2.toString();
 			break;
 		case 2:
-			var a = getRndInteger(10,100);
+			var a = getRndInteger(10,20);
 			var b = getRndInteger(1,10);
 			answer[2] = a-b;
 			document.getElementById("addor2").innerHTML = b.toString();
 			document.getElementById("sum2").innerHTML = a.toString();
+			break;
+		case 3:
+			var a = getRndInteger(10,100);
+			var b = getRndInteger(1,10);
+			answer[3] = a-b;
+			document.getElementById("addor3").innerHTML = b.toString();
+			document.getElementById("sum3").innerHTML = a.toString();
 			break;
 		}
 	}
@@ -89,7 +96,7 @@ function trackOutcome(problemClass,studentSucceeded){
 	if(studentSucceeded) {numCorrect[problemClass]++;}
 	else{numAbandoned[problemClass]++;}
 	let Score = numCorrect[problemClass] * 2 - numAbandoned[problemClass]*5;
-	if (Score > 3) {displayCuteAnimal(problemClass);}
+	if (Score > 10) {displayCuteAnimal(problemClass);}
 }
 
 function displayCuteAnimal(problemClass) {
