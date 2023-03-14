@@ -35,3 +35,7 @@ input {
 	position: relative;
 	z-index:-1;
 }
+button {
+	font-size: 0.5rem;
+	border-radius: 5 px;
+}
