@@ -46,11 +46,13 @@ function newProblem(problemClass) {
 			document.getElementById("addend1").innerHTML = prompt2.toString();
 			break;
 		case 2:
-			var a = getRndInteger(10,20);
-			var b = getRndInteger(1,10);
-			answer[2] = a-b;
-			document.getElementById("addor2").innerHTML = b.toString();
-			document.getElementById("sum2").innerHTML = a.toString();
+			var a = getRndInteger(1,20);
+			var b = getRndInteger(1,20);
+			answer[2] = Math.min(a, b);
+			var prompt = Math.max(a, b);
+			var prompt2 = prompt-answer[2];
+			document.getElementById("addor2").innerHTML = prompt2.toString();
+			document.getElementById("sum2").innerHTML = prompt.toString();
 			break;
 		case 3:
 			var a = getRndInteger(10,100);
@@ -58,6 +60,24 @@ function newProblem(problemClass) {
 			answer[3] = a-b;
 			document.getElementById("addor3").innerHTML = b.toString();
 			document.getElementById("sum3").innerHTML = a.toString();
+			break;
+		case 4:
+			var a = getRndInteger(1,100);
+			var b = getRndInteger(1,100);
+			answer[4] = Math.min(a, b);
+			var prompt = Math.max(a, b);
+			var prompt2 = prompt-answer[4];
+			document.getElementById("addor4").innerHTML = prompt2.toString();
+			document.getElementById("sum4").innerHTML = prompt.toString();
+			break;
+		case 5:
+			var a = getRndInteger(1,100);
+			var b = getRndInteger(1,100);
+			answer[5] = Math.max(a, b);
+			var prompt = Math.min(a, b);
+			var prompt2 = answer[5]-prompt;
+			document.getElementById("addor5").innerHTML = prompt.toString();
+			document.getElementById("addend5").innerHTML = prompt2.toString();
 			break;
 		}
 	}
